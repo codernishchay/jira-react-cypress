@@ -1,0 +1,121 @@
+.issue-form-list {
+  list-style: none;
+}
+
+.h1 {
+  margin-top: 80px;
+  color: rgb(5, 22, 100);
+  font-size: 25px;
+  padding-bottom: 0px;
+}
+
+.issue-row {
+  padding: 30px;
+  border: 0.3px solid gray;
+  width: 50%;
+  justify-content: center;
+  height: inherit;
+}
+
+.expanded-card {
+  padding: 50px;
+  top: 10%;
+  bottom: 10%;
+  left: 20%;
+  background-color: white;
+  position: fixed;
+  width: 60%;
+  height: 70%;
+  z-index: 5;
+  border: 0.02px solid rgb(155, 144, 218);
+}
+
+.close-icon {
+  position: fixed;
+  right: calc(15%);
+  top: calc(100vh - 85vh);
+  background: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.issue-card-table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.status-tag {
+  padding: 10px;
+  height: fit-content;
+  color: white;
+  width: fit-content;
+  background-color: blue;
+}
+
+.project-contributors-1 {
+  font-size: 20px;
+}
+.project-contributors-1 > img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  width: 8px;
+  height: 15px;
+  background-color: #000a94;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content option {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

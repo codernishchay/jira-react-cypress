@@ -1,0 +1,116 @@
+.issue-form-list {
+  list-style: none;
+}
+
+.issue-form-button {
+  background-color: blue;
+  border: 0;
+}
+
+.h1 {
+  margin-top: 80px;
+  color: rgb(5, 22, 100);
+  font-size: 25px;
+  padding-bottom: 0px;
+}
+
+textarea,
+select,
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+input[type="submit"],
+.button {
+  bottom: 0;
+  position: relative;
+  background: #1708a0;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 600;
+  width: 40%;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  display: block;
+  appearance: none;
+  border-radius: 4px;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  transition: 0.3s all;
+}
+
+button[type="button"] {
+  padding: 5px;
+  background: #516391;
+  color: white;
+  letter-spacing: 0px;
+  text-transform: none;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:hover,
+button[type="button"]:hover {
+  background: #24065d;
+  color: white;
+}
+
+input[type="submit"]:active {
+  transition: 0.3s all;
+  top: 2px;
+}
+.issue-form-container {
+  padding: 30px;
+  z-index: 2;
+  left: 20%;
+  background-color: white;
+  position: absolute;
+  width: 100vh;
+  height: 70%;
+  border: 0.02px solid rgb(155, 144, 218);
+}
+
+.close-icon {
+  content: "x";
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.form-text {
+  color: gray;
+  font-size: 15px;
+}
+[data-tag="issue-description"] {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+.status-name {
+  margin-left: 200px;
+}
