@@ -15,13 +15,13 @@ export default function Header() {
   };
 
   return (
-    <div className="header">
+    <div className="header" data-tag="header">
       <div className="bread-cr">Projects / {project.name}</div>
       <p>{project.name}</p>
 
       <div className="lower-header">
         <div className="input-lower-header">
-          <input onChange={(e) => handleSearch(e.target.value)}></input>{" "}
+          <input data-tag="search-box" onChange={(e) => handleSearch(e.target.value)}></input>{" "}
           <img src="search.png"></img>
           <div className="project-contributors">
             <img src="man.png"></img>
@@ -31,7 +31,7 @@ export default function Header() {
 
         <div>
           {expanded && <IssueForm setExpanded={setExpanded}></IssueForm>}
-          <button onClick={() => setExpanded(true)}> + Create Issue </button>
+          <button data-tag="create-issue" onClick={() => setExpanded(true)}> + Create Issue </button>
         </div>
       </div>
     </div>

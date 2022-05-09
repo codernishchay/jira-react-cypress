@@ -1,4 +1,4 @@
-# Issue Tracker
+# Jira React Cypress
 
 Data attributes are like data-\* , we can put anything after dash, to uniquely identify html elements like id.
 
@@ -13,23 +13,27 @@ Data attributes are like data-\* , we can put anything after dash, to uniquely i
 
 ### Some attributes to be used for this assignment
 
-| Component / Element      | data-tag            | Must have text |
-| ------------------------ | ------------------- | -------------- |
-| Top Nav Bar              | navbar              | Issue Tracker  |
-| Create Issue - Heading   | create-issue-header | Create Issue   |
-| Form Description Input   | description         |                |
-| From Assigned-To Input   | assigned_to         |                |
-| Form Severity Input      | severity            |                |
-| Form Submit Button       | submit              |                |
-| Issue Card Component     | card-container      |                |
-| Issue Card Description   | issue-description   |                |
-| Issue Card Assigned To   | assigned-to         |                |
-| Issue Card Close Tag     | close-tag           |                |
-| Issue Card Close Button  | close-btn           |                |
-| Issue Card Delete Button | delete-btn          |                |
+| Component / Element      | data-tag            |
+| ------------------------ | ------------------- |
+| Top Nav Bar              | navbar              |
+| Create Project Form             | project-form |  
+| Project Form Description Input   | pf-description |
+| Project From Lead Input   | pf-lead         |              
+| Project Form Project Name Input      | pf-name   |   
+| Project Form Submit Button       | pf-submit     |
+| Header Component     | header      |  
+| Create Issue Button     | create-issue      |                
+| Create Issue Form  Div   |  form-container      |                
+| Issue form Description Input  | if-description   |              
+| Issue form Assigned To Input  | assigned_to         |                
+| Issue form Summary Input    |  if-summary          |             
+| Issue form Submit  Button   |  if-submit          |               
+| Search Box | search-box | 
+| Issue Card | card-container | 
+| Expanded Issue Card | expanded-card | 
+| Expanded Issue Card Drop-down | drop-down| 
 
-### Test File : issue-tracker.spec.test.js
+### Test File : jira-react.spec.js
 
 ### To run tests :
-
-     npx cypress open
+         npx cypress open

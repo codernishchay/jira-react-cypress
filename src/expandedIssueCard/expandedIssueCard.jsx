@@ -27,7 +27,7 @@ export default function ExpandedIssueCard({ issue, expanded, toggle }) {
   };
 
   return (
-    <div className="expanded-card">
+    <div className="expanded-card" data-tag="expanded-card">
       <h1>Issue Details </h1>
       {issue && (
         <div>
@@ -47,7 +47,7 @@ export default function ExpandedIssueCard({ issue, expanded, toggle }) {
             <div className="issue-row">
               <div class="dropdown">
                 <div className="status-tag">{map1.get(issue.status)}</div>
-                <select class="dropbtn" onChange={handleChange}>
+                <select data-tag="drop-down" class="dropbtn" onChange={handleChange}>
                   <option value={""}>none</option>
                   <option value={"A"}>TO DO</option>
                   <option value={"B"}>In Progress</option>

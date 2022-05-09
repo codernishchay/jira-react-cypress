@@ -24,14 +24,16 @@ export default function IssueForm({ setExpanded }) {
           <div className="form-text">Summary</div>
 
           <input
-            data-tag="description"
+            data-tag="if-summary"
             {...register("summary")}
             placeholder="Summary"
           />
-          <div className="form-text">Description</div>
+          <div 
+         
+          className="form-text">Description</div>
 
           <textarea
-            data-tag="assigned_to"
+            data-tag="if-description"
             {...register("description")}
             required
             placeholder="Description"
@@ -50,7 +52,7 @@ export default function IssueForm({ setExpanded }) {
             required
             placeholder="Assigned To"
           />
-          <input type="submit" data-tag="submit" />
+          <input type="submit" data-tag="if-submit" />
           <button onClick={() => setExpanded(false)}> Cancel </button>
         </form>
       </div>

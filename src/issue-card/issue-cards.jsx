@@ -20,12 +20,12 @@ export default function IssueCards() {
   }, [list]);
 
   useEffect(() => {
-    if (searchlist !== undefined) {
+    if (searchlist !== undefined ) {
       setlist(searchlist);
     } else {
       setlist(issuelist);
     }
-  }, [searchlist, issuelist]);
+  }, [searchlist, issuelist ]);
 
   return (
     <div className="issue-cards">

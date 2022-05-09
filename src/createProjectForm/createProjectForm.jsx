@@ -14,24 +14,25 @@ export default function CreateProjectForm() {
   };
 
   return (
-    <div className="project-form" data-tag="form-container">
+    <div className="project-form" data-tag="project-form">
       <h1>Create Project</h1>
       <div className="box">
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
-            data-tag="name"
+            data-tag="pf-name"
             {...register("name")}
             required
             placeholder="Project Name"
           />
-          <input {...register("key")} required placeholder="key" />
-          <input
+          <input {...register("key")}  placeholder="key" />
+          <textarea
             {...register("description")}
             required
+            data-tag="pf-description"
             placeholder="Description"
           />
-          <textarea {...register("lead")} required placeholder="Lead" />
-          <input type="submit" data-tag="Create Project" />
+          <input data-tag="pf-lead" {...register("lead")} required placeholder="Lead" />
+          <input   type="submit" data-tag="pf-submit" />
         </form>
       </div>
     </div>
