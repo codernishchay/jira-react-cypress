@@ -66,7 +66,7 @@ export default function ExpandedIssueCard({ issue, expanded, toggle }) {
           </div>
         </div>
       )}
-      <button className="close-icon" onClick={toggle}>
+      <button className="close-icon" data-tag="close-expanded" onClick={toggle}>
         X
       </button>
     </div>

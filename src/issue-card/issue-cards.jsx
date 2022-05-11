@@ -31,7 +31,7 @@ export default function IssueCards() {
     <div className="issue-cards">
       <div className="issue-cards-column">
         <p>To Do {todoList.length} issues</p>
-        <div className="issue-card-section" id="ics1">
+        <div className="issue-card-section" data-tag="todo-section" >
           {todoList &&
             todoList.map((issue) => {
               return <IssueCard key={issue.issueId} issue={issue} />;
@@ -40,7 +40,7 @@ export default function IssueCards() {
       </div>
       <div className="issue-cards-column">
         <p>In progress {inProgressList.length} issues</p>
-        <div className="issue-card-section">
+        <div className="issue-card-section" data-tag="inprogress-section">
           {inProgressList &&
             inProgressList.map((issue) => {
               return <IssueCard key={issue.issueId} issue={issue} />;
@@ -49,7 +49,7 @@ export default function IssueCards() {
       </div>
       <div className="issue-cards-column">
         <p>Done {doneList.length} issues</p>
-        <div className="issue-card-section">
+        <div className="issue-card-section" data-tag="done-section">
           {doneList &&
             doneList.map((issue) => {
               return <IssueCard key={issue.issudId} issue={issue} />;
@@ -58,7 +58,7 @@ export default function IssueCards() {
       </div>
       <div className="issue-cards-column">
         <p>Blocked {blockedList.length} issues</p>
-        <div className="issue-card-section">
+        <div className="issue-card-section" data-tag="blocked-section">
           {blockedList &&
             blockedList.map((issue) => {
               return <IssueCard key={issue.issudId} issue={issue} />;
